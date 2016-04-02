@@ -1,3 +1,5 @@
+// Organization form component - actions must be defined here AND in the organization/route
+
 import Ember from 'ember';
 
 export default Ember.Component.extend({
