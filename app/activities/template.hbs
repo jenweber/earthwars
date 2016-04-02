@@ -1,3 +1,14 @@
 {{outlet}}
 
 {{activity-form routeCreateActivity='createActivity'}}
+
+{{#each model as |activity|}}
+  <h4>{{activity.name}}</h4>
+  <p>{{activity.category}}</p>
+  <p>{{activity.value}}</p><br>
+{{/each}}
+
+
+{{!-- <h5>{{activity.name}}</h5>
+<p>{{activity.category}}</p>
+<p>{{activity.value}}</p> --}}
