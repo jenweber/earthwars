@@ -2,10 +2,11 @@
 
 {{activity-form routeCreateActivity='createActivity'}}
 
-{{#each model as |activity|}}
-  <h4>{{activity.name}}</h4>
-  <p>{{activity.category}}</p>
-  <p>{{activity.value}}</p><br>
+{{#each model as |eachActivity|}}
+  {{activity-row activity=eachActivity
+      routeUpdateActivity='updateActivity'
+      routeDestroyActivity='destroyActivity'
+  }}
 {{/each}}
 
 

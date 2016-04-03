@@ -14,12 +14,9 @@ export default Ember.Route.extend({
         console.log('Route Action : updateActivity');
         activity.save();
       },
-      destroyActivity: function(id){
+      destroyActivity: function(activity){
         console.log('Route Action : destroyActivity');
-        this.store.findRecord('activity', id).then((activity) => {
-          this.store.deleteRecord(activity);
-          console.log(`record ${id} destroyed`);
-        });
+          activity.destroyRecord();
       }
     }
 });
