@@ -1,10 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  auth: Ember.inject.service(),
   flashMessages: Ember.inject.service(),
 
   actions: {
     signOut () {
+      console.log('route action: sign out');
       this.get('auth').signOut()
       .then(() => this.transitionTo('sign-in'))
       .then(() => {
