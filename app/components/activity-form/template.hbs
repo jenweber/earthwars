@@ -1,11 +1,13 @@
 {{yield}}
 
-<form>
-  <h1>Create Organization</h1>
-  <div>
-    {{input placeholder='Name' value=form.name}}
-    {{input placeholder='Category' value=form.category}}
-    {{input placeholder='Value' value=form.value}}
-  </div>
-  <button {{action 'createActivity'}}>Log an Activity</button>
-</form>
+<div class="activity-form">
+  <form>
+    <h3>What actions did you take today?</h3>
+    <div>
+      {{input placeholder='Name' value=form.name}}
+      {{input placeholder='Category' value=form.category}}
+      {{input placeholder='Value' value=form.value}}
+    </div>
+    <button {{action 'createActivity'}}>Log an Activity</button>
+  </form>
+<div>
