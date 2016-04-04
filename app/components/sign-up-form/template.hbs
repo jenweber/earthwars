@@ -3,13 +3,11 @@
 {{password-input password=credentials.password}}
 {{password-confirmation-input password=credentials.passwordConfirmation}}
 <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Your Company
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
+  <select name="organizations">
     {{#each organizations as |organization|}}
-      <li value="{{organization.id}}">{{organization.name}}</li>
+      <option id="organization_id" value={{organization.id}}>{{organization.name}}</option>
     {{/each}}
-  </ul>
+  </select>
 </div><br>
 
 <button type="submit" class="btn btn-primary" {{action "submit"}}>

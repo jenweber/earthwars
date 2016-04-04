@@ -12,6 +12,7 @@ export default Ember.Route.extend({
   },
   actions: {
     signUp (credentials) {
+      console.log(credentials);
       this.get('auth').signUp(credentials)
       .then(() => this.get('auth').signIn(credentials))
       .then(() => this.transitionTo('application'))

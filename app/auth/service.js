@@ -7,12 +7,15 @@ export default Ember.Service.extend({
   isAuthenticated: Ember.computed.bool('credentials.token'),
 
   signUp (credentials) {
+    console.log(credentials.id);
     return this.get('ajax').post('/sign-up', {
       data: {
         credentials: {
           email: credentials.email,
+          name: credentials.name,
           password: credentials.password,
           password_confirmation: credentials.passwordConfirmation,
+          organization_id: credentials.organization_id
         }
       },
     });
