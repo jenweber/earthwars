@@ -6,11 +6,6 @@ export default Ember.Component.extend({
 
   credentials: {},
 
-// model: function() {
-//   console.log("model called for organizations");
-//   return this.store.findAll('organization');
-//   },
-
   actions: {
     submit () {
       this.sendAction('submit', this.get('credentials'));

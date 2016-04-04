@@ -3,7 +3,13 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   auth: Ember.inject.service(),
   flashMessages: Ember.inject.service(),
-
+  model: function() {
+    console.log('organization model called');
+    return {
+      organizations: this.store.findAll('organization'),
+      other: "things go here"
+    };
+  },
   actions: {
     signUp (credentials) {
       this.get('auth').signUp(credentials)
@@ -18,5 +24,5 @@ export default Ember.Route.extend({
         .danger('There was a problem. Please try again.');
       });
     },
-  },
+  }
 });
