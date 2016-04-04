@@ -17,6 +17,11 @@ export default Ember.Route.extend({
         .danger('There was a problem. Are you sure you\'re signed-in?');
       });
     },
+    createOrganization: function(properties){
+      console.log('Route Action : createOrganization');
+      this.store.createRecord('organization', properties)
+        .save().then(()=>console.log('record created'));
+    },
 
     error (reason) {
       let unauthorized = reason.errors.some((error) => {

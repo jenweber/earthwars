@@ -1,6 +1,53 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
 
-// .activity-form {
-//   width: 50%;
+$robins-egg: #6BCAE2;
+$dark-teal: #51A5BA;
+$grass-green: #41924B;
+$light-mint: #AFEAAA;
+$darker-mint: #87E293;
+$accent-orange: #FE8402;
+
+
+
+.activity-form {
+  width: 50%;
+  background-color: $light-mint;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.activities-container {
+  padding: 1% 2%;
+  background-color: $robins-egg;
+  border-radius: 5px;
+  width: 50%;
+  margin-top: 2%;
+}
+
+.activity-row {
+  width: 100%;
+  margin: 2% 0;
+  padding: 1%;
+  clear: both;
+  display: inline-flex;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.activity-value {
+  float: left;
+}
+
+.activity-row > * {
+  width: 30%;
+  padding: 1% 1%;
+}
+
+// .activity-name {
+//  float: left;
+// }
+//
+// .activity-delete {
+//   float: left;
 // }

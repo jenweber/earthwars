@@ -1,13 +1,13 @@
 {{outlet}}
 
-{{#each model as |eachActivity|}}
-  {{activity-row activity=eachActivity
-      routeUpdateActivity='updateActivity'
-      routeDestroyActivity='destroyActivity'
-  }}
-{{/each}}
+    {{activity-form createActivity="createActivity"}}
 
-
-{{!-- <h5>{{activity.name}}</h5>
-<p>{{activity.category}}</p>
-<p>{{activity.value}}</p> --}}
+<div class="activities-container">
+<h4>My Activities</h4>
+  {{#each model as |eachActivity|}}
+    {{activity-row activity=eachActivity
+        routeUpdateActivity='updateActivity'
+        routeDestroyActivity='destroyActivity'
+    }}
+  {{/each}}
+</div>

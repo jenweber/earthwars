@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   actions: {
     createActivity: function(){
       console.log('Component Action : createActivity');
-      this.sendAction('routeCreateActivity', this.get('form'));
+      this.sendAction('createActivity', this.get('form'));
       this.set('form', {});
     }
   }

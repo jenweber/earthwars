@@ -1,4 +1,6 @@
-<h4>{{activity.name}}</h4>
-<p>{{activity.category}}</p>
-<p>{{activity.value}}</p>
-<button {{action 'destroyActivity'}}>X</button><br>
+<div class="activity-row">
+  <div class="activity-value">{{activity.value}}</div>
+  <div class="activity-name">{{activity.name}}</div>
+  <div class="activity-category">{{activity.category}}</div>
+  <div class="activity-delete"><button {{action 'destroyActivity'}}>X</button></div>
+</div>

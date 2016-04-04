@@ -2,4 +2,13 @@
 
 {{organization-form routeCreateOrganization='createOrganization'}}
 
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Your Company
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    {{#each model as |organization|}}
+      <li>{{organization.name}}</li>
+    {{/each}}
+  </ul>
+</div><br>
 {{!-- {{outlet}} --}}
