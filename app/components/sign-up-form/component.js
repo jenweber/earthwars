@@ -9,7 +9,7 @@ export default Ember.Component.extend({
 
   actions: {
     selectValue () {
-      // this.set('organizationid', Ember.$('select').val());
+      this.set('organizationid', Ember.$('select').val());
       this.set('credentials.organization_id', Ember.$('select').val());
     },
     submit () {
