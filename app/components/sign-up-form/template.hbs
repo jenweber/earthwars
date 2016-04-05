@@ -2,13 +2,23 @@
 {{email-input email=credentials.email}}
 {{password-input password=credentials.password}}
 {{password-confirmation-input password=credentials.passwordConfirmation}}
-<div class="dropdown">
+{{!-- <div class="dropdown">
   <select name="organizations">
+    {{#each organizations as |organization|}}
+      {{organization-input organization=credentials.organization }}
+    {{/each}}
+  </select>
+</div><br> --}}
+
+<div class="dropdown">
+  <select name="organizations" {{action "selectValue" on="change"}}>
     {{#each organizations as |organization|}}
       <option id="organization_id" value={{organization.id}}>{{organization.name}}</option>
     {{/each}}
   </select>
 </div><br>
+
+<p> {{organizationid}} </p>
 
 <button type="submit" class="btn btn-primary" {{action "submit"}}>
   Sign Up
