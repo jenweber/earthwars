@@ -9,7 +9,6 @@ export default Ember.Route.extend({
       console.log('route action: sign out');
       this.get('auth').signOut()
       .then(() => this.transitionTo('sign-in'))
-      .then(() => this.store.unloadAll())
       .then(() => {
         this.get('flashMessages').warning('You have been signed out.');
       })
@@ -17,6 +16,7 @@ export default Ember.Route.extend({
         this.get('flashMessages')
         .danger('There was a problem. Are you sure you\'re signed-in?');
       });
+      this.store.unloadAll();
     },
     createOrganization: function(properties){
       console.log('Route Action : createOrganization');

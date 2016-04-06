@@ -15,6 +15,7 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('admin-dashboard');
+  this.route('home');
 });
 
 export default Router;
