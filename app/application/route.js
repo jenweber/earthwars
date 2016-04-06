@@ -9,6 +9,7 @@ export default Ember.Route.extend({
       console.log('route action: sign out');
       this.get('auth').signOut()
       .then(() => this.transitionTo('sign-in'))
+      .then(() => this.store.unloadAll())
       .then(() => {
         this.get('flashMessages').warning('You have been signed out.');
       })
