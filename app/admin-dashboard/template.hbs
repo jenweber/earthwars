@@ -1,0 +1,17 @@
+{{!-- {{outlet}} --}}
+
+{{!-- <b>Organizations: </b>
+<ul>
+{{#each model.organizations as |organization|}}
+  <li>{{organization.name}}</li>
+{{/each}}
+</ul>
+
+<p><b>Number of Organizations: </b>{{model.organizations.length}} </p> --}}
+
+<b>List of Activities</b>
+<ul>
+{{#each model.activities as |activity|}}
+  <li><b>Name:</b> {{activity.name}}   <b>Value:</b> {{activity.value}}  <b>Org:</b> {{activity.organization.name}} </li>
+{{/each}}
+</ul>

@@ -14,7 +14,7 @@
   <select required name="organizations" {{action "selectValue" on="change"}}>
     <option disabled selected> -- select an option -- </option>
     {{#each organizations as |organization|}}
-      <option id={{organization.activityTotal}} value={{organization.id}}>{{organization.name}}</option>
+      <option value={{organization.id}}>{{organization.name}}</option>
     {{/each}}
   </select>
 </div><br>
