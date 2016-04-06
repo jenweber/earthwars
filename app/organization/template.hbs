@@ -12,3 +12,10 @@
   </ul>
 </div><br>
 {{!-- {{outlet}} --}}
+<ul>
+{{#each model as |organization|}}
+  {{#each organization.activities as |activity|}}
+    {{activity.name}}
+  {{/each}}
+{{/each}}
+</ul>
