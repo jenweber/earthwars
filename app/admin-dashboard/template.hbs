@@ -15,3 +15,21 @@
   <li><b>Name:</b> {{activity.name}}   <b>Value:</b> {{activity.value}}  <b>Org:</b> {{activity.organization.name}} </li>
 {{/each}}
 </ul>
+
+
+    <h4>Update My Organization</h4>
+    <div class="org-update-fields">
+      <form>
+        <label>Current Organization Name: {{model.organization.name}}</label>
+        {{input placeholder='new name for your organization' value=form.name}}
+      </form>
+      <form>
+        <label>Current Main Contact: {{model.organization.contact}}</label>
+          {{input placeholder='new email address' value=form.contact}}
+      </form>
+      <form>
+        <label>Current Goal: {{model.organization.goal}}</label>
+          {{input placeholder="new goal" value=form.goal}}
+        </form>
+      <button class="create-org-btn btn btn-primary" {{action 'createOrganization'}}>Register</button>
+    </div>
