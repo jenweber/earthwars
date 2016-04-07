@@ -1,6 +1,22 @@
 {{!-- Organization Template - When you go to home/organization, here's what you see --}}
 
-{{organization-form routeCreateOrganization='createOrganization'}}
+{{org-update-form organization=model updateOrganization="updateOrganization"}}
+
+{{!-- <h4>Update My Organization</h4>
+<div class="org-update-fields">
+    <label>Current Organization Name: {{model.name}}</label>
+    {{input placeholder='new name for your organization' value=form.name}}
+    <button class="update-org-button" {{action 'updateOrganization'}}>Update</button>
+
+    <label>Current Main Contact: {{model.contact}}</label>
+      {{input placeholder='new email address' value=form.contact}}
+      <button class="update-org-button" {{action 'updateOrganization'}}>Update</button>
+
+    <label>Current Goal: {{model.goal}}</label>
+      {{input placeholder="new goal" value=form.goal}}
+      <button class="update-org-button" {{action 'updateOrganization'}}>Update</button>
+
+</div> --}}
 
 {{!-- {{outlet}} --}}
 {{!-- <ul>

@@ -1,11 +1,15 @@
 // Organization Route - actions must be defined here AND in the organization-form component
 
 import Ember from 'ember';
+import { storageFor } from 'ember-local-storage';
 
 export default Ember.Route.extend({
+  form: {},
+  credentials: storageFor('auth'),
   model: function(){
-  return this.store.findAll('organization');
+  return this.store.find('organization', this.get('credentials.organization_id'));
   },
+
   actions: {
       createOrganization: function(properties){
         console.log('Route Action : createOrganization');
