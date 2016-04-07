@@ -17,7 +17,8 @@
   {{model.length}}
 </div>
 
+{{!-- Here model.length is used only so that when the value of model.length changes, the helper will detect the change and run again to update the score --}}
 <div class="my-total-points">
   <h4>Total Points</h4>
-  {{sumValues model}}
+  {{sumValues model model.length}}
 </div>
