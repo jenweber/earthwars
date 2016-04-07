@@ -1,4 +1,8 @@
-###EarthWars - a General Assembly capstone project by Jen Weber
+### EarthWars - a General Assembly capstone project by Jen Weber
+
+[Deployed Site](http://jenweber.github.io/earthwars/)
+[API hosted on Heroku](https://earth-wars-api.herokuapp.com/)
+[Back End Repository on GitHub](https://github.com/jenweber/earthwars-api)
 
 Your office or school is the battleground. At stake - Planet Earth itself. Who will prevail?
 
