@@ -7,6 +7,7 @@ $grass-green: #41924B;
 $light-mint: #AFEAAA;
 $darker-mint: #87E293;
 $accent-orange: #FE8402;
+$dark-blue: #003366;
 
 
 
@@ -42,6 +43,75 @@ $accent-orange: #FE8402;
 .activity-row > * {
   width: 30%;
   padding: 1% 1%;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  margin-left: 10px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  padding: 0 10px;
+}
+
+.hero-text {
+  width: 100%;
+    top: 60px;
+    left:0;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+.hero-title {
+  font-size: 40px;
+}
+
+.org-registration-fields {
+  display: inline-flex;
+  width: 100%;
+  margin-top: 100px;
+  padding: 1%;
+
+}
+
+input {
+  margin: 0 1%;
+}
+
+.create-org-btn {
+  background-color: $dark-blue;
+  color: white;
+}
+
+.create-org-btn {
+  background-color: $dark-blue;
+  color: white;
+}
+
+.learn-more {
+  margin-top: 80px;
+  background-color: $dark-blue;
+  color: white;
+}
+
+.index-content {
+  background-color: $dark-blue;
+}
+
+.user-forms {
+  width: 70%;
+  margin: 1% auto;
 }
 
 // .activity-name {
