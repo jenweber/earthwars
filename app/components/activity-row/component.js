@@ -1,3 +1,4 @@
+// Rows in the table of a user's past activities
 import Ember from 'ember';
 
 export default Ember.Component.extend({

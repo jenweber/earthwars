@@ -1,3 +1,4 @@
+// Passes up the update organization form actions
 import Ember from 'ember';
 
 export default Ember.Component.extend({

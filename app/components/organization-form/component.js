@@ -1,4 +1,4 @@
-// Organization form component - actions must be defined here AND in the organization/route
+// Organization form component - sends up the action to the route
 
 import Ember from 'ember';
 

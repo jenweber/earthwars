@@ -1,3 +1,5 @@
+// Handles what is available in local storage
+
 import Ember from 'ember';
 import { storageFor } from 'ember-local-storage';
 

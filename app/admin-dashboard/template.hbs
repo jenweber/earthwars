@@ -1,10 +1,15 @@
 <div class="template-container">
-<b>List of Activities</b>
-<ul>
-{{#each model.activities as |activity|}}
-  <li><b>Name:</b> {{activity.name}}   <b>Value:</b> {{activity.value}}  <b>Org:</b> {{activity.organization.name}} </li>
-{{/each}}
-</ul>
+  <h4>My Organization's Activities</h4>
+  <ul>
+  {{#each model.activities as |activity|}}
+    <li><b>Name:</b> {{activity.name}}   <b>Value:</b> {{activity.value}}  <b>Org:</b> {{activity.organization.name}} </li>
+  {{/each}}
+  </ul>
 
-{{#link-to "organization"}}Edit Organization Details{{/link-to}}
+  <h4>Organization Account</h4>
+  <p>Organization Name: {{model.organization.name}}</p>
+  <p>Main Contact Displayed to Users: {{model.organization.contact}}</p>
+  <p>Goal Displayed to Users: {{model.organization.goal}}</p>
+  {{#link-to "organization"}}Edit Organization Details{{/link-to}}
+
 </div>

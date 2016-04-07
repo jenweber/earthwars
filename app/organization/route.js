@@ -1,8 +1,9 @@
-// Organization Route - actions must be defined here AND in the organization-form component
+// The organization route is only used by an admin for updating an organization, currently
 
 import Ember from 'ember';
 import { storageFor } from 'ember-local-storage';
 
+// look up the organization record that matches the user's organization id
 export default Ember.Route.extend({
   form: {},
   credentials: storageFor('auth'),

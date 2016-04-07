@@ -1,28 +1,3 @@
-{{!-- Organization Template - When you go to home/organization, here's what you see --}}
+{{!-- form to update an organization - need to hide this from unauth users --}}
 
 {{org-update-form organization=model updateOrganization="updateOrganization"}}
-
-{{!-- <h4>Update My Organization</h4>
-<div class="org-update-fields">
-    <label>Current Organization Name: {{model.name}}</label>
-    {{input placeholder='new name for your organization' value=form.name}}
-    <button class="update-org-button" {{action 'updateOrganization'}}>Update</button>
-
-    <label>Current Main Contact: {{model.contact}}</label>
-      {{input placeholder='new email address' value=form.contact}}
-      <button class="update-org-button" {{action 'updateOrganization'}}>Update</button>
-
-    <label>Current Goal: {{model.goal}}</label>
-      {{input placeholder="new goal" value=form.goal}}
-      <button class="update-org-button" {{action 'updateOrganization'}}>Update</button>
-
-</div> --}}
-
-{{!-- {{outlet}} --}}
-{{!-- <ul>
-{{#each model as |organization|}}
-  {{#each organization.activities as |activity|}}
-    {{activity.name}}<br>
-  {{/each}}
-{{/each}}
-</ul> --}}
