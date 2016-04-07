@@ -2,13 +2,12 @@
 
 
 <form>
-  <h1>Create Organization</h1>
-  <div>
-    {{input placeholder='Name' value=form.name}}
-    {{input placeholder='Main Contact' value=form.contact}}
-    {{input placeholder='Organization Goal' value=form.goal}}
-  </div>
-  <button {{action 'createOrganization'}}>Register</button>
+    <div class="org-registration-fields">
+      {{input placeholder='your organization or team name' value=form.name}}
+      {{input placeholder='your email address' value=form.contact}}
+      {{input placeholder="your team's energy saving goal" value=form.goal}}
+      <button class="create-org-btn btn btn-primary" {{action 'createOrganization'}}>Register</button>
+    </div>
 </form>
 
 {{yield}}
