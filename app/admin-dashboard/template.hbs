@@ -2,7 +2,12 @@
   <h4>My Organization's Activities</h4>
   <ul>
   {{#each model.activities as |activity|}}
-    <li><b>Name:</b> {{activity.name}}   <b>Value:</b> {{activity.value}}  <b>Org:</b> {{activity.organization.name}} </li>
+    <li>
+      <b>Name:</b> {{activity.name}}
+      <b>Value:</b> {{activity.value}}
+      <b>User:</b> {{activity.user.name}}
+      <b>Org:</b> {{activity.user.organization.name}}
+    </li>
   {{/each}}
   </ul>
 
