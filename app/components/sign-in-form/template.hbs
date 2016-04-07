@@ -1,10 +1,13 @@
-{{email-input email=credentials.email}}
-{{password-input password=credentials.password}}
+<div class="user-forms">
+  <h4>Sign In</h4>
+  {{email-input email=credentials.email}}
+  {{password-input password=credentials.password}}
 
-<button type="submit" class="btn btn-primary" {{action "submit"}}>
-  Sign In
-</button>
+  <button type="submit" class="btn btn-primary" {{action "submit"}}>
+    Sign In
+  </button>
 
-<button class="btn btn-default" {{action "reset"}}>
-  Cancel
-</button>
+  <button class="btn btn-default" {{action "reset"}}>
+    Cancel
+  </button>
+</div>

@@ -1,30 +1,26 @@
-{{username-input name=credentials.name}}
-{{email-input email=credentials.email}}
-{{password-input password=credentials.password}}
-{{password-confirmation-input password=credentials.passwordConfirmation}}
-{{!-- <div class="dropdown">
-  <select name="organizations">
-    {{#each organizations as |organization|}}
-      {{organization-input organization=credentials.organization }}
-    {{/each}}
-  </select>
-</div><br> --}}
+<div class="user-forms">
+  <h4>Sign Up</h4>
+  {{username-input name=credentials.name}}
+  {{email-input email=credentials.email}}
+  {{password-input password=credentials.password}}
+  {{password-confirmation-input password=credentials.passwordConfirmation}}
 
-<div class="dropdown">
-  <select required name="organizations" {{action "selectValue" on="change"}}>
-    <option disabled selected> -- select an option -- </option>
-    {{#each organizations as |organization|}}
-      <option value={{organization.id}}>{{organization.name}}</option>
-    {{/each}}
-  </select>
-</div><br>
+  <div class="dropdown">
+    <select required name="organizations" {{action "selectValue" on="change"}}>
+      <option disabled selected> -- select an option -- </option>
+      {{#each organizations as |organization|}}
+        <option value={{organization.id}}>{{organization.name}}</option>
+      {{/each}}
+    </select>
+  </div><br>
 
-<p> {{organizationid}} </p>
+  <p> {{organizationid}} </p>
 
-<button type="submit" class="btn btn-primary" {{action "submit"}}>
-  Sign Up
-</button>
+  <button type="submit" class="btn btn-primary" {{action "submit"}}>
+    Sign Up
+  </button>
 
-<button class="btn btn-default" {{action "reset"}}>
-  Cancel
-</button>
+  <button class="btn btn-default" {{action "reset"}}>
+    Cancel
+  </button>
+</div>
