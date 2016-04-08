@@ -9,7 +9,9 @@ export default Ember.Component.extend({
   },
   destroyActivity: function(){
     console.log('Component Action : destroyActivity');
-    this.sendAction('routeDestroyActivity', this.get('activity'));
+    console.log(this.get('activity'));
+    this.sendAction('destroyActivity', this.get('activity'));
+
   }
 }
 });
