@@ -14,7 +14,7 @@
 {{activity-form createActivity="createActivity"}}
 
 {{!-- List of past activities --}}
-<div class="activities-container">
+{{!-- <div class="activities-container">
 <h4>My Activities</h4>
   {{#each model as |eachActivity|}}
     {{activity-row activity=eachActivity
@@ -22,4 +22,6 @@
         routeDestroyActivity='destroyActivity'
     }}
   {{/each}}
-</div>
+</div> --}}
+{{activities-container activities=model routeUpdateActivity='updateActivity'
+                                          routeDestroyActivity='destroyActivity'}}

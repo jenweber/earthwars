@@ -1,0 +1,8 @@
+
+<h4>My Activities</h4>
+{{#each activities as |eachActivity|}}
+  {{activity-row activity=eachActivity
+                  updateActivity='routeUpdateActivity'
+                  destroyActivity='routeDestroyActivity'
+  }}
+{{/each}}
