@@ -20,6 +20,8 @@ EarthWars is a web app made with Ember front-end framework and Rails API. It is 
 - A user can log new activities and assign them a score
 - A user can view their total number of activities logged and total score
 
+### Wireframes
+[Initial design](https://drive.google.com/file/d/0BxL5EMSDOzzwaUM2a1VjSUttMEk/view?usp=sharing)
 
 ### Technologies
 Ember was selected as a framework due to its strengths handling changing data. If a user logs an activity, many things must re-render, such as the score, the past activities, and in the future, a leaderboard.
