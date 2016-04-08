@@ -1,20 +1,34 @@
 <div class="all-templates-container">
-  <h4>My Organization's Activities</h4>
-  <ul>
-  {{#each model.activities as |activity|}}
-    <li>
-      <b>Name:</b> {{activity.name}}
-      <b>Value:</b> {{activity.value}}
-      <b>User:</b> {{activity.user.name}}
-      <b>Org:</b> {{activity.user.organization.name}}
-    </li>
-  {{/each}}
-  </ul>
 
+  <div class="my-total-actions">
+    <h4>Total # Activities</h4>
+    <h1>{{model.activities.length}}</h1>
+  </div>
+
+  <div class="my-total-points">
+    <h4>Total Score: </h4>
+    <h1>{{sumValues model.activities model.activities.length}}</h1>
+  </div>
+
+  <div class="activities-container">
+  <h4>My Organization's Activities</h4>
+  {{#each model.activities as |activity|}}
+    <div class="activity-row org-act-row">
+
+      Name: {{activity.name}}
+      Value: {{activity.value}}
+      User: {{activity.user.name}}
+      {{!-- <b>Org:</b> {{activity.user.organization.name}} --}}
+  </div>
+  {{/each}}
+
+</div>
+
+<div class="activity-form">
   <h4>Organization Account</h4>
   <p>Organization Name: {{model.organization.name}}</p>
   <p>Main Contact Displayed to Users: {{model.organization.contact}}</p>
   <p>Goal Displayed to Users: {{model.organization.goal}}</p>
-  {{#link-to "organization"}}Edit Organization Details{{/link-to}}
-
+{{#link-to "organization"}}<button class="btn btn-primary">Edit Organization Details</button>{{/link-to}}<
+</div>
 </div>

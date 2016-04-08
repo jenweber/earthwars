@@ -7,8 +7,8 @@
     <div>
       {{input placeholder='Name' value=form.name}}
       {{input placeholder='Category' value=form.category}}
-      {{input placeholder='Value' value=form.value}}
+      {{input placeholder='Value' value=form.value}}<br>
     </div>
-    <button {{action 'createActivity'}}>Submit</button>
+    <button class="btn btn-primary" {{action 'createActivity'}}>Submit</button>
   </form>
 </div>

@@ -24,20 +24,38 @@ body {
   margin: 3% auto;
 }
 
+.my-total-actions {
+  width: 50%;
+  float:left;
+  background-color: $accent-orange;
+  padding: 2%;
+  margin: 2% auto;
+  text-align: center;
+}
+
+.my-total-points {
+  width: 50%;
+  float:left;
+  background-color: $robins-egg;
+  padding: 2%;
+  margin: 2% auto;
+  text-align: center;
+}
+
 .activity-form {
-  width: 70%;
+  clear: left;
+  width: 100%;
   background-color: $darker-mint;
-  border-radius: 5px;
   padding: 2%;
   margin-top: 3%;
 }
 
 .activities-container {
+  clear: left;
   padding: 1% 2%;
   background-color: $robins-egg;
-  border-radius: 5px;
   width: 100%;
-  margin-top: 3%;
+  margin: 3% 0;
 }
 
 .activity-row {
@@ -55,8 +73,27 @@ body {
 }
 
 .activity-row > * {
-  width: 30%;
   padding: 1% 1%;
+}
+
+.org-act-row > * {
+  padding: 1% 1%;
+  width: 30%;
+}
+
+.activity-value {
+  width: 5%;
+}
+
+.activity-delete {
+  width: 10%;
+}
+
+.activity-category {
+  width: 45%;
+}
+.activity-name {
+  width: 45%;
 }
 
 .hero-image {
