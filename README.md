@@ -44,7 +44,7 @@ After completing initial user stories and wireframes, I put together a basic API
 ![ERD - Entity Relationship Diagram](https://bucketimgoinghome.s3.amazonaws.com/2016-04-08/e362a7911179d5b739cef7834cdb3440)
 
 ### Unsolved Problems and Hurdles
-
+Deploying the Ember app proved to be the most difficult unsolved problem, absorbing an entire day of work. I discovered that when you stick to the core features of Ember, it's great. Straying away to do custom things makes work much more difficult. There were many times where I knew it was a 5 minute JQuery solution but a 5 hour Ember task. I feel that I have a much better sense now of what is easy and what is hard in Ember, so I can plan my future apps to be done "the Ember way."
 
 ### Dependencies
 To run the front and back end repos from localhost, select the master branch on each. For the front end, in bash, npm install and then bower install. Start your ember server with ember s --proxy localhost:3000. For the back end, bundle install, and then rails s to start the server.

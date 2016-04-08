@@ -1,27 +1,20 @@
-{{!-- Number of activities logged so far --}}
-<div class="my-total-actions">
-  <h4>Total Activities Logged</h4>
-  {{model.length}}
+<div class="all-templates-container">
+  {{!-- Number of activities logged so far --}}
+  <div class="my-total-actions">
+    <h4>Total Activities Logged</h4>
+    {{model.length}}
+  </div>
+
+  {{!-- Total score of the user. Here model.length is used only so that when the value of model.length changes, the helper will detect the change and run again to update the score --}}
+  <div class="my-total-points">
+    <h4>Total Points</h4>
+    {{sumValues model model.length}}
+  </div>
+
+  {{!-- form to create a new activity --}}
+  {{activity-form createActivity="createActivity"}}
+
+  {{!-- List of activities performed so far --}}
+  {{activities-container activities=model routeUpdateActivity='updateActivity'
+                                            routeDestroyActivity='destroyActivity'}}
 </div>
-
-{{!-- Total score of the user. Here model.length is used only so that when the value of model.length changes, the helper will detect the change and run again to update the score --}}
-<div class="my-total-points">
-  <h4>Total Points</h4>
-  {{sumValues model model.length}}
-</div>
-
-{{!-- form to create a new activity --}}
-{{activity-form createActivity="createActivity"}}
-
-{{!-- List of past activities --}}
-{{!-- <div class="activities-container">
-<h4>My Activities</h4>
-  {{#each model as |eachActivity|}}
-    {{activity-row activity=eachActivity
-        routeUpdateActivity='updateActivity'
-        routeDestroyActivity='destroyActivity'
-    }}
-  {{/each}}
-</div> --}}
-{{activities-container activities=model routeUpdateActivity='updateActivity'
-                                          routeDestroyActivity='destroyActivity'}}

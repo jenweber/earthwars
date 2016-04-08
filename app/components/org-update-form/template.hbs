@@ -1,15 +1,14 @@
 {{!-- An edit form for update organization --}}
 {{yield}}
 
-<div class="activity-form">
+<div class="activity-form standalone-form">
   <h4>Update Your Organization's Information</h4>
   <form>
     <div>
-      {{organization.name}}
       {{input placeholder='Name' value=organization.name}}
       {{input placeholder='Contact' value=organization.contact}}
       {{input placeholder='Goal' value=organization.goal}}
-    </div>
-    <button {{action 'updateOrganization'}}>Submit</button>
+    </div><br>
+    <button class="btn btn-primary" {{action 'updateOrganization'}}>Submit</button>
   </form>
 </div>

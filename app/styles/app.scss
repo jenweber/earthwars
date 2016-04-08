@@ -9,21 +9,35 @@ $darker-mint: #87E293;
 $accent-orange: #FE8402;
 $dark-blue: #003366;
 
+.all-templates-container {
+  background-color: white;
+  width: 80%;
+  margin: 3% auto;
+  padding: 3%;
+}
 
+body {
+  background-color: $dark-blue;
+}
+
+.standalone-form {
+  margin: 3% auto;
+}
 
 .activity-form {
-  width: 50%;
-  background-color: $light-mint;
+  width: 70%;
+  background-color: $darker-mint;
   border-radius: 5px;
   padding: 2%;
+  margin-top: 3%;
 }
 
 .activities-container {
   padding: 1% 2%;
   background-color: $robins-egg;
   border-radius: 5px;
-  width: 50%;
-  margin-top: 2%;
+  width: 100%;
+  margin-top: 3%;
 }
 
 .activity-row {
@@ -46,7 +60,8 @@ $dark-blue: #003366;
 }
 
 .hero-image {
-  width: 100%;
+  width: 120%;
+  margin: 0;
 }
 
 .container-fluid {
