@@ -1,23 +1,24 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
 
-$robins-egg: #6BCAE2;
-$dark-teal: #51A5BA;
-$grass-green: #41924B;
-$light-mint: #AFEAAA;
-$darker-mint: #87E293;
-$soft-grey: #aec4cd;
+$activity-form: #6CCECB;
+$body-background: #218C8D;
+$inset-body: #218C8D;
+$my-total-actions: #ED8A3F;
+$my-total-points: #F9E559;
+$activities-container: #8DB87C;
 $dark-blue: #003366;
+$dark-grey: #333333;
 
 .all-templates-container {
-  background-color: white;
-  width: 80%;
+  background-color: $inset-body;
+  width: 90%;
   margin: 3% auto;
   padding: 3%;
 }
 
 body {
-  background-color: $dark-blue;
+  background-color: $body-background;
 }
 
 .standalone-form {
@@ -25,27 +26,28 @@ body {
 }
 
 .my-total-actions {
-  width: 50%;
+  width: 48%;
   float:left;
-  background-color: $darker-mint;
+  background-color: $my-total-actions;
   padding: 2%;
-  margin: 2% auto;
+  margin: 0 0 3% 2%;
   text-align: center;
 }
 
 .my-total-points {
-  width: 50%;
+  width: 48%;
   float:left;
-  background-color: $robins-egg;
+  background-color: $my-total-points;
   padding: 2%;
-  margin: 2% auto;
+  margin: 0 2% 3% 0;
   text-align: center;
 }
 
 .activity-form {
   clear: left;
   width: 100%;
-  background-color: $soft-grey;
+  background-color: $activity-form;
+  color: 473E3F;
   padding: 2%;
   margin-top: 3%;
 }
@@ -53,7 +55,7 @@ body {
 .activities-container {
   clear: left;
   padding: 1% 2%;
-  background-color: $robins-egg;
+  background-color: $activities-container;
   width: 100%;
   margin: 3% 0;
 }
@@ -168,6 +170,32 @@ input {
 
 .template-container {
   padding: 5%;
+}
+
+.fontawesome {
+  background-color: white;
+  color: $dark-grey;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  box-shadow: 0px;
+  border: 0px;
+}
+
+.submit-activity {
+  background-color: white;
+  color: $dark-grey;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  box-shadow: 0px;
+  border: 0px;
+}
+
+.action-description {
+  margin: 8px 0;
+  font-size: 18px;
 }
 
 // .activity-name {
