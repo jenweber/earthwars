@@ -2,6 +2,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  tagName: 'tr',
   actions: {
   updateActivity: function(){
     console.log('Component Action : updateActivity');
@@ -11,7 +12,6 @@ export default Ember.Component.extend({
     console.log('Component Action : destroyActivity');
     console.log(this.get('activity'));
     this.sendAction('destroyActivity', this.get('activity'));
-
   }
 }
 });

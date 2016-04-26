@@ -14,7 +14,9 @@
   {{!-- form to create a new activity --}}
   {{activity-form createActivity="createActivity"}}
 
+<div class= "activities-container">
   {{!-- List of activities performed so far --}}
   {{activities-container activities=model routeUpdateActivity='updateActivity'
                                             routeDestroyActivity='destroyActivity'}}
+</div>
 </div>
