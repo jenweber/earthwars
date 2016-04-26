@@ -3,13 +3,22 @@
 
 <div class="activity-form">
   <form>
-    <h4>What action did you take today?</h4>
+    <h4>What actions did you take today?</h4>
     <div>
-      <button class="bike" {{action 'selectBike'}}>Ride a Bike</button> 
-      {{input placeholder='Name' value=form.name}}
-      {{input placeholder='Category' value=form.category}}
-      {{input placeholder='Value' value=form.value}}<br>
+      <button class="fontawesome" {{action 'selectBicycle'}}><i class="fa fa-4x fa-bicycle"></i></button>
+      <button class="fontawesome" {{action 'selectWalk'}}><i class="fa fa-4x fa-street-view"></i></button>
+      <button class="fontawesome" {{action 'selectPublicTransport'}}><i class="fa fa-4x fa-bus"></i></button>
+      <button class="fontawesome" {{action 'selectCoffee'}}><i class="fa fa-4x fa-coffee"></i></button>
+      <button class="fontawesome" {{action 'selectCutlery'}}><i class="fa fa-4x fa-cutlery"></i></button>
+      <button class="fontawesome" {{action 'selectTelevision'}}><i class="fa fa-4x fa-television"></i></button>
+      <button class="fontawesome" {{action 'selectDoubleLightbulb'}}><i class="fa fa-4x fa-lightbulb-o"></i><i class="fa fa-4x fa-lightbulb-o"></i><i class="fa fa-4x fa-lightbulb-o"></i></button>
+      <button class="fontawesome" {{action 'selectPlug'}}><i class="fa fa-4x fa-plug"></i></button>
+      <button class="fontawesome" {{action 'selectRecycle'}}><i class="fa fa-4x fa-recycle"></i></button>
+      <button class="fontawesome" {{action 'selectCompost'}}><i class="fa fa-4x fa-trash"></i></button>
+      <div class="action-description">
+        {{form.value}} - {{form.name}}
+      </div>
     </div>
-    <button class="btn btn-primary" {{action 'createActivity'}}>Submit</button>
+    <button class="submit-activity" {{action 'createActivity'}}>Submit</button>
   </form>
 </div>

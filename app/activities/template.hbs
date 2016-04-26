@@ -1,15 +1,15 @@
 <div class="all-templates-container">
+  {{!-- Total score of the user. Here model.length is used only so that when the value of model.length changes, the helper will detect the change and run again to update the score --}}
+  <div class="my-total-points">
+    <h4>My Score</h4>
+    <h1>{{sumValues model model.length}}</h1>
+  </div>
   {{!-- Number of activities logged so far --}}
   <div class="my-total-actions">
     <h4>Total # Activities</h4>
     <h1>{{model.length}}</h1>
   </div>
 
-  {{!-- Total score of the user. Here model.length is used only so that when the value of model.length changes, the helper will detect the change and run again to update the score --}}
-  <div class="my-total-points">
-    <h4>My Score</h4>
-    <h1>{{sumValues model model.length}}</h1>
-  </div>
 
   {{!-- form to create a new activity --}}
   {{activity-form createActivity="createActivity"}}
