@@ -5,10 +5,10 @@ $activity-form: #6CCECB;
 $body-background: #218C8D;
 $inset-body: #218C8D;
 $my-total-actions: #ED8A3F;
-$my-total-points: #F9E559;
+$my-total-points: #FFC200;
 $activities-container: #8DB87C;
 $dark-blue: #003366;
-$dark-grey: #333333;
+$dark-grey: #444444;
 
 .all-templates-container {
   background-color: $inset-body;
@@ -32,6 +32,7 @@ body {
   padding: 2%;
   margin: 0 0 3% 2%;
   text-align: center;
+  color: white;
 }
 
 .my-total-points {
@@ -41,13 +42,14 @@ body {
   padding: 2%;
   margin: 0 2% 3% 0;
   text-align: center;
+  color: white;
 }
 
 .activity-form {
   clear: left;
   width: 100%;
   background-color: $activity-form;
-  color: 473E3F;
+  color: $dark-grey;
   padding: 2%;
   margin-top: 3%;
 }
@@ -182,11 +184,16 @@ input {
   border: 0px;
 }
 
+.fontawesome:focus {
+  outline-color: $my-total-actions;
+  outline-style: solid;
+  outline-style: dotted;
+}
+
 .submit-activity {
   background-color: white;
   color: $dark-grey;
   font-size: 20px;
-  font-weight: bold;
   margin-bottom: 8px;
   border-radius: 5px;
   box-shadow: 0px;
@@ -196,6 +203,22 @@ input {
 .action-description {
   margin: 8px 0;
   font-size: 18px;
+}
+
+.scoring {
+  font-size: 80px;
+  font-weight: bolder;
+  line-height: 90px;
+}
+
+.delete-btn {
+  background-color: $dark-grey;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  box-shadow: 0px;
+  border: 0px;
 }
 
 // .activity-name {
