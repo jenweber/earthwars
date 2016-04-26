@@ -6,7 +6,7 @@ $dark-teal: #51A5BA;
 $grass-green: #41924B;
 $light-mint: #AFEAAA;
 $darker-mint: #87E293;
-$accent-orange: #FE8402;
+$soft-grey: #aec4cd;
 $dark-blue: #003366;
 
 .all-templates-container {
@@ -27,7 +27,7 @@ body {
 .my-total-actions {
   width: 50%;
   float:left;
-  background-color: $accent-orange;
+  background-color: $darker-mint;
   padding: 2%;
   margin: 2% auto;
   text-align: center;
@@ -45,7 +45,7 @@ body {
 .activity-form {
   clear: left;
   width: 100%;
-  background-color: $darker-mint;
+  background-color: $soft-grey;
   padding: 2%;
   margin-top: 3%;
 }
