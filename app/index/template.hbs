@@ -1,13 +1,19 @@
 {{!-- This is the "home" page for the site --}}
-<div>
-  <img class="hero-image" src="https://github.com/jenweber/earthwars/blob/development/img/earthwars-hero3.jpg?raw=true">
+
+<div class="jumbotron">
+  <div class="container">
+  </div>
 </div>
+
+{{!-- <div>
+  <img class="hero-image" src="https://bucketimgoinghome.s3.amazonaws.com/2016-04-27/1c7a50d26a6a4355ed5bb792c7bbdfdd">
+</div> --}}
 
 <div class="hero-text">
   <div class="hero-title">EARTHWARS</div>
   <div class="hero-desc">An Earth Week app for your organization, where the office is your battleground. Who will prevail?</div>
   <div>{{organization-form routeCreateOrganization='createOrganization'}}</div>
-  <div><a href="#app-description"><button type="button" class="btn btn-primary btn-lg learn-more">Learn More</button></a></div>
+  <div><a href="#app-description"><button type="button" class="btn edit-org-btn btn-lg learn-more">Learn More</button></a></div>
 </div>
 <div class="all-templates-container" id="app-description">
 <p>EarthWars is a turn-key game designed for your organization’s Earth Week;

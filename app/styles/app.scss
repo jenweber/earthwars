@@ -13,16 +13,12 @@ $dark-grey: #444444;
 .all-templates-container {
   background-color: $inset-body;
   width: 90%;
-  margin: 3% auto;
+  margin: 50px auto;
   padding: 3%;
 }
 
 body {
   background-color: $body-background;
-}
-
-.standalone-form {
-  margin: 3% auto;
 }
 
 .my-total-actions {
@@ -69,37 +65,9 @@ body {
 }
 
 th, td {
-    padding: 5px 15px;
+    padding: 5px 10px;
     border-bottom: 1px solid white;
     vertical-align: middle;
-}
-
-.activity-value {
-  float: left;
-}
-
-.activity-row > * {
-  padding: 1% 1%;
-}
-
-.org-act-row > * {
-  padding: 1% 1%;
-  width: 30%;
-}
-
-.activity-value {
-  width: 5%;
-}
-
-.activity-delete {
-  width: 10%;
-}
-
-.activity-category {
-  width: 45%;
-}
-.activity-name {
-  width: 45%;
 }
 
 .hero-image {
@@ -148,17 +116,6 @@ input {
 }
 
 .create-org-btn {
-  background-color: $dark-blue;
-  color: white;
-}
-
-.create-org-btn {
-  background-color: $dark-blue;
-  color: white;
-}
-
-.learn-more {
-  margin-top: 80px;
   background-color: $dark-blue;
   color: white;
 }
@@ -214,18 +171,21 @@ input {
 }
 
 .delete-btn {
-  background-color: $dark-grey;
-  color: white;
+  background-color: white;
+  color: $dark-grey;
   font-size: 14px;
   border-radius: 5px;
   box-shadow: 0px;
   border: 0px;
 }
 
-// .activity-name {
-//  float: left;
-// }
-//
-// .activity-delete {
-//   float: left;
-// }
+.edit-org-btn {
+  color: $dark-grey;
+  background-color: white;
+}
+
+.jumbotron {
+  background-image: url(https://bucketimgoinghome.s3.amazonaws.com/2016-04-27/1c7a50d26a6a4355ed5bb792c7bbdfdd);
+  background-size: cover;
+  min-height: 600px;
+}
